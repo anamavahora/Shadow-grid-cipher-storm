@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shadow Grid: Cipher Storm</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-container">
+    <h1>🧠 Shadow Grid: Cipher Storm</h1>
+
+    <div class="controls">
+      <label for="difficulty">Difficulty:</label>
+      <select id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+      <button onclick="startGame()">Start Game</button>
+    </div>
+
+    <div id="cipher-clue" class="cipher-clue"></div>
+    <div id="grid" class="grid"></div>
+
+    <div class="status">
+      <p>🕒 Time: <span id="timer">0</span>s</p>
+      <p>💯 Score: <span id="score">0</span></p>
+      <p class="message" id="message"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
